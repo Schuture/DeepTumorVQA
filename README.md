@@ -35,9 +35,10 @@ AbdomenAtlas1.1
     ...
 ```
 Please refer to the following sources for downloading: [TO BE FIXED]
+## Paper
+[TO BE FIXED] - paper information
 
-
-## Example Loading Dataset
+## Installation
 [TO BE FIXED] - how to pull dataset from huggingface
 
 ## Citation
