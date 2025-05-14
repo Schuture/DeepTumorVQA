@@ -3,7 +3,7 @@
 <h1><img src="docs/resources/icons/scan.ico" width="4%" style="margin-right: 10px"/>DeepTumorVQA 1.0</h1>
 <h3><i>A Large-Scale Medical Visual Question Answering Benchmark</i></h3>
 
-<img src="docs/resources/teaser.png" width="55%" alt="Dataset teaser"/>
+<img src="images/taskdemonstration.pdf" width="55%" alt="Dataset teaser"/>
 
 <p>
 <a href="https://huggingface.co/datasets/tumor-vqa/DeepTumorVQA_1.0" target="_blank">
