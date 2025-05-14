@@ -3,7 +3,7 @@
 <h1><img src="docs/resources/icons/scan.ico" width="4%" style="margin-right: 10px"/>DeepTumorVQA 1.0</h1>
 <h3><i>A Large-Scale Medical Visual Question Answering Benchmark</i></h3>
 
-<img src="images/taskdemonstration.pdf" width="55%" alt="Dataset teaser"/>
+<img src="images/task_demonstration.png" width="55%" alt="Dataset teaser"/>
 
 <p>
 <a href="https://huggingface.co/datasets/tumor-vqa/DeepTumorVQA_1.0" target="_blank">
@@ -11,17 +11,29 @@
 </a>
 </p>
 
-<div style="font-size: 0.9em;">
-    <a href="https://yourhomepage.com" target="_blank">Your Name</a><sup>1</sup> •
-    <a href="https://yourcoauthor.com" target="_blank">Coauthor Name</a><sup>2</sup>
+<div style="font-size: 0.9em; text-align: center;">
+
+<a href="#" target="_blank">Yixiong Chen</a><sup>1</sup> •
+<a href="#" target="_blank">Pedro R. A. S. Bassi</a><sup>1,2</sup> •
+<a href="#" target="_blank">Wenjie Xiao</a><sup>1</sup> •
+<a href="#" target="_blank">Xinze Zhou</a><sup>1</sup> •
+<a href="#" target="_blank">Sezgin Er</a><sup>3</sup> •
+<a href="#" target="_blank">Ibrahim Ethem Hamamci</a><sup>3</sup> •
+<a href="#" target="_blank">Zongwei Zhou</a><sup>1</sup> •
+<a href="#" target="_blank">Alan Yuille</a><sup>1</sup>
+
 </div>
 
-<div style="font-size: 0.9em;">
-    <sup>1</sup> Johns Hopkins University &emsp;
-    <sup>2</sup> Institution 2
-</div>
+<div style="font-size: 0.9em; text-align: center;">
+
+<sup>1</sup> Johns Hopkins University &emsp;
+<sup>2</sup> University of Bologna &emsp;
+<sup>3</sup> Istanbul Medipol University  
+<br/>
+Contact: <a href="mailto:ayuille1@jhu.edu">ayuille1@jhu.edu</a>
 
 </div>
+
 
 ---
 
