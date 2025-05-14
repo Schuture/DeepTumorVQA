@@ -1,50 +1,51 @@
-# DeepTumorVQA
-[DeepTumorVQA benchmark (9262 CT images + 395k QA pairs)]
-The DeepTumorVQA Benchmark is a dataset of 9262 CT images and 395k QA pairs. The QA pairs include a comprehensive collection of reasoning, measurement, recognition, and medical commensense understanding in the context of tumor-related CT scans.
+<div align="center">
 
-## Downloading CT Dataset
-The Abdomen Atlas dataset is organized as:
-```
-AbdomenAtlas1.1
-    ├── BDMAP_00000001
-    │   ├── ct.nii.gz
-    │   └── segmentations
-    │       ├── aorta.nii.gz
-    │       ├── gall_bladder.nii.gz
-    │       ├── kidney_left.nii.gz
-    │       ├── kidney_right.nii.gz
-    │       ├── liver.nii.gz
-    │       ├── pancreas.nii.gz
-    │       ├── postcava.nii.gz
-    │       ├── spleen.nii.gz
-    │       ├── stomach.nii.gz
-    │       └── ...
-    ├── BDMAP_00000002
-    │   ├── ct.nii.gz
-    │   └── segmentations
-    │       ├── aorta.nii.gz
-    │       ├── gall_bladder.nii.gz
-    │       ├── kidney_left.nii.gz
-    │       ├── kidney_right.nii.gz
-    │       ├── liver.nii.gz
-    │       ├── pancreas.nii.gz
-    │       ├── postcava.nii.gz
-    │       ├── spleen.nii.gz
-    │       ├── stomach.nii.gz
-    │       └── ...
-    ...
-```
-Please refer to the following sources for downloading: [TO BE FIXED]
-## Paper
-[TO BE FIXED] - paper information
+<h1><img src="docs/resources/icons/scan.ico" width="4%" style="margin-right: 10px"/>DeepTumorVQA 1.0</h1>
+<h3><i>A Large-Scale Medical Visual Question Answering Benchmark</i></h3>
 
-## Installation
-[TO BE FIXED] - how to pull dataset from huggingface
+<img src="docs/resources/teaser.png" width="55%" alt="Dataset teaser"/>
 
-## Citation
-```
-@citations [TO BE FIXED]
-```
+<p>
+<a href="https://huggingface.co/datasets/tumor-vqa/DeepTumorVQA_1.0" target="_blank">
+    <img alt="HF Dataset" src="https://img.shields.io/badge/Dataset-HuggingFace-yellow?logo=huggingface" height="20" />
+</a>
+</p>
 
-## Acknowledgement
-This work was supported by ... [TO BE FIXED]
+<div style="font-size: 0.9em;">
+    <a href="https://yourhomepage.com" target="_blank">Your Name</a><sup>1</sup> •
+    <a href="https://yourcoauthor.com" target="_blank">Coauthor Name</a><sup>2</sup>
+</div>
+
+<div style="font-size: 0.9em;">
+    <sup>1</sup> Johns Hopkins University &emsp;
+    <sup>2</sup> Institution 2
+</div>
+
+</div>
+
+---
+
+## 🧠 Overview
+We present **DeepTumorVQA**, a diagnostic visual question answering (VQA) benchmark targeting abdominal tumors in CT scans. It comprises **9,262 CT volumes** (3.7M slices) from 17 public datasets, with **395K** expert-level questions spanning four categories: Recognition, Measurement, Visual Reasoning, and Medical Reasoning.
+
+---
+
+## 📁 Dataset Format
+
+Each example contains the following fields:
+
+- `image`: Path or identifier for the CT image or volume
+- `question`: A natural-language question about the image
+- `answer`: The corresponding answer (expert-level)
+- (Optional: metadata like `modality`, `region`, `split`, etc.)
+
+### 🔍 Example Entry
+
+```json
+{
+  "image": "vol_01348_slice_57.png",
+  "question": "Is there evidence of a lesion in the right kidney?",
+  "answer": "No"
+}
+
+ 
