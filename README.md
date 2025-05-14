@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1><img src="docs/resources/icons/scan.ico" width="4%" style="margin-right: 10px"/>DeepTumorVQA 1.0</h1>
+<h1>DeepTumorVQA 1.0</h1>
 <h3><i>A Large-Scale Medical Visual Question Answering Benchmark</i></h3>
 
 <img src="images/task_demonstration.png" width="100%" alt="Dataset teaser"/>
@@ -103,6 +103,35 @@ This work was supported by the Lustgarten Foundation for Pancreatic Cancer Resea
     author={Yixiong Chen, Pedro R. A. S. Bassi, Wenjie Xiao, Xinze Zhou, Sezgin Er, Ibrahim Ethem Hamamci, Zongwei Zhou, Alan Yuille},
     year={2025},
     journal={ToBePublished},
+}
+
+@article{PancreaticSteatosis,
+    title={{Computed tomography evaluation of pancreatic steatosis: correlation with COVID-19 prognosis}},
+    author={Serkan Guneyli, Hakan Dogan, Omer Tarik Esengur, Hur Hassoy},
+    year={2021},
+    journal={https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8833002/},
+}
+
+@article{FattyLiver,
+    title={{Computed Tomography Scans in the Evaluation of Fatty Liver Disease in a Population Based Study: The Multi-Ethnic Study of
+Atherosclerosis}},
+    author={Irfan Zeb, Dong Li, Khurram Nasir, Ronit Katz, Vahid N. Larijani, Matthew J. Budoff},
+    year={2021},
+    journal={https://pmc.ncbi.nlm.nih.gov/articles/PMC3377794/pdf/nihms364643.pdf},
+}
+
+@article{PancreaticCystTreatment,
+    title={{Leading in the Treatment of Pancreatic Cysts}},
+    author={Marc Shapiro},
+    year={2022},
+    journal={https://www.hopkinsmedicine.org/news/articles/2022/04/leading-in-the-treatment-of-pancreatic-cysts#:~:text=Worrisome%20features%20include%20a%20cyst,risks%20and%20benefits%20to%20surgery.},
+}
+
+@article{Pseudocysts,
+    title={{CT attenuation of unilocular pancreatic cystic lesions to differentiate pseudocysts from mucin-containing cysts}},
+    author={Hamid Chalian, Hüseyin Gürkan Töre, Frank H Miller, Vahid Yaghmai},
+    year={2011},
+    journal={https://pubmed.ncbi.nlm.nih.gov/21737901/},
 }
 
 ---
