@@ -41,15 +41,12 @@ We present **DeepTumorVQA**, a diagnostic visual question answering (VQA) benchm
 
 ---
 ## 📄 Contents 
-- [Overview](#)
-- [Contents](#contents)
-- [Dataset Format](#dataset-format)
-- [Dataset Overview](#dataset-overview)
-- [RUN Your Own Evaluation](#run-your-own-evaluation)
-  - [Benchmark](#benchmark)
-  - [Installation](#installation)
-  - [Evaluation](#evaluation)
-- [Acknowledgement](#acknowledgement)
+- [Overview](#-overview)
+- [Contents](#-contents)
+- [Dataset Format](#-dataset-format)
+- [Dataset Overview](#-dataset-overview)
+- [Installation](#-installation)
+- [Acknowledgement](#acknowledgement-and-disclosure-of-funding)
 - [Citation](#citation)
 
 ---
@@ -80,16 +77,7 @@ Note: The number of volumes may differ from the original publications due to val
 | 16. FLARE’23 (2022) [🔗](https://codalab.lisn.upsaclay.fr/competitions/12239)                            | 4,100        | 30            | 17. Trauma Detect. (2023) [🔗](https://www.rsna.org/education/ai-resources-and-training/ai-image-challenge/abdominal-trauma-detection-ai-challenge) | 4,711        | 23            |
 
 ---
-## 🔍 Example Entry
-
-```json
-{
-  "image": "vol_01348_slice_57.png",
-  "question": "Is there evidence of a lesion in the right kidney?",
-  "answer": "No"
-}
-
-```
+## 🔍 Installation
 
 ## Acknowledgement and Disclosure of Funding
 
@@ -125,13 +113,6 @@ Atherosclerosis}},
     author={Marc Shapiro},
     year={2022},
     journal={https://www.hopkinsmedicine.org/news/articles/2022/04/leading-in-the-treatment-of-pancreatic-cysts#:~:text=Worrisome%20features%20include%20a%20cyst,risks%20and%20benefits%20to%20surgery.},
-}
-
-@article{Pseudocysts,
-    title={{CT attenuation of unilocular pancreatic cystic lesions to differentiate pseudocysts from mucin-containing cysts}},
-    author={Hamid Chalian, Hüseyin Gürkan Töre, Frank H Miller, Vahid Yaghmai},
-    year={2011},
-    journal={https://pubmed.ncbi.nlm.nih.gov/21737901/},
 }
 
 ---
