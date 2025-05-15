@@ -2,8 +2,8 @@
 
 <h1>DeepTumorVQA 1.0</h1>
 <h3><i>A Large-Scale Medical Visual Question Answering Benchmark</i></h3>
+<img src="images/cover.png" width="100%" alt="deeptumorvqacover"/>
 
-<img src="images/task_demonstration.png" width="100%" alt="Dataset teaser"/>
 
 <p>
 <a href="https://huggingface.co/datasets/tumor-vqa/DeepTumorVQA_1.0" target="_blank">
@@ -42,6 +42,8 @@ Contact: <a href="mailto:ayuille1@jhu.edu">ayuille1@jhu.edu</a>
 
 
 We present **DeepTumorVQA**, a diagnostic visual question answering (VQA) benchmark targeting abdominal tumors in CT scans. It comprises **9,262 CT volumes** (3.7M slices) from 17 public datasets, with **395K** expert-level questions spanning four categories: Recognition, Measurement, Visual Reasoning, and Medical Reasoning.
+
+<img src="images/task_demonstration.png" width="100%" alt="Dataset teaser"/>
 
 ---
 
