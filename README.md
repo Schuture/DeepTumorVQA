@@ -1,8 +1,8 @@
 <div align="center">
-
-<h1>DeepTumorVQA 1.0</h1>
+    
+<img src="images/covervqa.png" width="100%" alt="deeptumorvqacover"/>
+<h1>Are Vision Language Models Ready for Clinical Diagnosis? A 3D Medical Benchmark for Tumor-centric Visual Question Answering</h1>
 <h3><i>A Large-Scale Medical Visual Question Answering Benchmark</i></h3>
-<img src="images/cover.png" width="100%" alt="deeptumorvqacover"/>
 
 
 <p>
