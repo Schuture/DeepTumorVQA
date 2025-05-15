@@ -50,18 +50,34 @@ We present **DeepTumorVQA**, a diagnostic visual question answering (VQA) benchm
 - [Citation](#citation)
 
 ---
+</div>
 
 ## 📁 Dataset Format
 
 Each example contains the following fields:
 
-- `image`: Path or identifier for the CT image or volume
-- `question`: A natural-language question about the image
-- `answer`: The corresponding answer (expert-level)
-- (Optional: metadata like `modality`, `region`, `split`, etc.)
+
+- `question_id`: A unique integer identifier for each VQA sample (e.g., `0`).
+- `image_id`: A string identifier for the corresponding CT volume or slice (e.g., `BDMAP_00000001`).
+- `spacing`: Image voxel spacing (e.g., `"[0.8222656 0.8222656 2.5 ]"`), stored as a string.
+- `shape`: The image dimensions (e.g., `"(512, 512, 339)"`), stored as a string.
+- `sex`: Binary patient sex (`Male`, `Female`).
+- `age`: Patient age in years, stored as a float64 (e.g., `65.0`).
+- `scanner`: Type of CT scanner used (e.g., `siemens`.
+- `contrast`: Indicates use of contrast agent (`Non-contrast`, `Arterial`, `Venous`, etc.).
+- `question`: A natural-language question about the image.
+- `answer`: The corresponding expert-level answer to the question.
+- `multiple_choice_question`: Reformulation of the question as a multiple-choice item.
+- `correct_option`: The correct answer among multiple choices (a value from A to D).
+- `organ`: The anatomical structure referenced in the question.
+- `lesion`: The type of lesion involved (`tumor`, `cyst`, etc.).
+- `question_type`: The general category of the question (`recognition`, `measurement`, `visual reasoning`, `medical reasoning`, etc.).
+- `question_subtype`: A more granular subclassification (e.g., `lesion_counting`, `organ_hu_measurement`, `lesion_type_classification, etc.).
+- `split`: Designates whether the sample belongs to the `train` or `validation` set.
 
 ---
-  
+<div align="center">
+    
 ## 🧾 Dataset Overview
 
 The following public abdominal CT datasets are included in **DeepTumorVQA**.  
@@ -78,6 +94,19 @@ Note: The number of volumes may differ from the original publications due to val
 
 ---
 ## 🔍 Installation
+You can load **DeepTumorVQA 1.0** directly using the 🤗 `datasets` library:
+
+```bash
+pip install datasets
+```
+```bash
+from datasets import load_dataset
+
+deep_tumor_vqa = load_dataset("tumor-vqa/DeepTumorVQA_1.0")
+print(deep_tumor_vqa)
+
+```
+
 
 ## Acknowledgement and Disclosure of Funding
 
