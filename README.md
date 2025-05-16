@@ -108,7 +108,7 @@ Note: The number of volumes may differ from the original publications due to val
 
 To facilitate alignment between our VQA dataset and the original CT image sources, we provide a mapping file that links each image ID in our dataset to its corresponding source identifier from the original Abdomen Atlas dataset.
 
-You can view the ID mapping CSV here: [Data/Abdomen_Atlas_ID_mapping.csv](./Data/Abdomen_Atlas_ID_mapping.csv)
+You can view the ID mapping CSV here: [Abdomen_Atlas_ID_mapping.csv](./Data/AbdomenAtlas_ID_mapping.csv)
 
 This file ensures traceability and reproducibility when working with external data references and annotations.
 
