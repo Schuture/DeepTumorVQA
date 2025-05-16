@@ -105,6 +105,13 @@ Note: The number of volumes may differ from the original publications due to val
 | 9–14. MSD CT Tasks (2021) [🔗](https://decathlon-10.grand-challenge.org/)                                | 945          | 1             | 15. AbdomenCT-1K (2021) [🔗](https://github.com/JunMa11/AbdomenCT-1K)                                     | 1,050        | 12            |
 | 16. FLARE’23 (2022) [🔗](https://codalab.lisn.upsaclay.fr/competitions/12239)                            | 4,100        | 30            | 17. Trauma Detect. (2023) [🔗](https://www.rsna.org/education/ai-resources-and-training/ai-image-challenge/abdominal-trauma-detection-ai-challenge) | 4,711        | 23            |
 </div>
+
+To facilitate alignment between our VQA dataset and the original CT image sources, we provide a mapping file that links each image ID in our dataset to its corresponding source identifier from the original Abdomen Atlas dataset.
+
+You can view the ID mapping CSV here: [Data/Abdomen_Atlas_ID_mapping.csv](./Data/Abdomen_Atlas_ID_mapping.csv)
+
+This file ensures traceability and reproducibility when working with external data references and annotations.
+
 <div align="center">
     
 ## 🔍 Installation
