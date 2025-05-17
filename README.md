@@ -14,8 +14,8 @@
 <div style="font-size: 0.9em; text-align: center;">
 
 <a href="#" target="_blank">Yixiong Chen</a><sup>1</sup> •
-<a href="#" target="_blank">Pedro R. A. S. Bassi</a><sup>1,2</sup> •
 <a href="#" target="_blank">Wenjie Xiao</a><sup>1</sup> •
+<a href="#" target="_blank">Pedro R. A. S. Bassi</a><sup>1,2</sup> •
 <a href="#" target="_blank">Xinze Zhou</a><sup>1</sup> •
 <a href="#" target="_blank">Sezgin Er</a><sup>3</sup> •
 <a href="#" target="_blank">Ibrahim Ethem Hamamci</a><sup>3</sup> •
@@ -141,33 +141,11 @@ This work was supported by the Lustgarten Foundation for Pancreatic Cancer Resea
 </div>
 
 ```
-@article{Schuture,
+@article{chen2025tumor,
     title={{Are Vision Language Models Ready for Clinical Diagnosis? A 3D Medical Benchmark for Tumor-centric Visual Question Answering}},
-    author={Yixiong Chen, Pedro R. A. S. Bassi, Wenjie Xiao, Xinze Zhou, Sezgin Er, Ibrahim Ethem Hamamci, Zongwei Zhou, Alan Yuille},
+    author={Yixiong Chen, Wenjie Xiao, Pedro R. A. S. Bassi, Xinze Zhou, Sezgin Er, Ibrahim Ethem Hamamci, Zongwei Zhou, Alan Yuille},
     year={2025},
     journal={ToBePublished},
-}
-
-@article{PancreaticSteatosis,
-    title={{Computed tomography evaluation of pancreatic steatosis: correlation with COVID-19 prognosis}},
-    author={Serkan Guneyli, Hakan Dogan, Omer Tarik Esengur, Hur Hassoy},
-    year={2021},
-    journal={https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8833002/},
-}
-
-@article{FattyLiver,
-    title={{Computed Tomography Scans in the Evaluation of Fatty Liver Disease in a Population Based Study: The Multi-Ethnic Study of
-Atherosclerosis}},
-    author={Irfan Zeb, Dong Li, Khurram Nasir, Ronit Katz, Vahid N. Larijani, Matthew J. Budoff},
-    year={2021},
-    journal={https://pmc.ncbi.nlm.nih.gov/articles/PMC3377794/pdf/nihms364643.pdf},
-}
-
-@article{PancreaticCystTreatment,
-    title={{Leading in the Treatment of Pancreatic Cysts}},
-    author={Marc Shapiro},
-    year={2022},
-    journal={https://www.hopkinsmedicine.org/news/articles/2022/04/leading-in-the-treatment-of-pancreatic-cysts#:~:text=Worrisome%20features%20include%20a%20cyst,risks%20and%20benefits%20to%20surgery.},
 }
 ```
 ---
