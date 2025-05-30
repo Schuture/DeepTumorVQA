@@ -142,11 +142,11 @@ This work was supported by the Lustgarten Foundation for Pancreatic Cancer Resea
 </div>
 
 ```
-@article{chen2025tumor,
-    title={{Are Vision Language Models Ready for Clinical Diagnosis? A 3D Medical Benchmark for Tumor-centric Visual Question Answering}},
-    author={Yixiong Chen, Wenjie Xiao, Pedro R. A. S. Bassi, Xinze Zhou, Sezgin Er, Ibrahim Ethem Hamamci, Zongwei Zhou, Alan Yuille},
-    year={2025},
-    journal={ToBePublished},
+@article{chen2025vision,
+  title={Are Vision Language Models Ready for Clinical Diagnosis? A 3D Medical Benchmark for Tumor-centric Visual Question Answering},
+  author={Chen, Yixiong and Xiao, Wenjie and Bassi, Pedro RAS and Zhou, Xinze and Er, Sezgin and Hamamci, Ibrahim Ethem and Zhou, Zongwei and Yuille, Alan},
+  journal={arXiv preprint arXiv:2505.18915},
+  year={2025}
 }
 ```
 ---
