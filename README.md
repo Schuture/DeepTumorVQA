@@ -56,7 +56,6 @@ We present **DeepTumorVQA**, a diagnostic visual question answering (VQA) benchm
 [Contents](#-contents)   
 [Dataset Format](#-dataset-format)  
 [Dataset Overview](#-dataset-overview)  
-[Installation](#-installation)  
 [Acknowledgement](#acknowledgement-and-disclosure-of-funding)  
 [Citation](#citation)
 
@@ -112,23 +111,8 @@ You can view the ID mapping CSV here: [Abdomen_Atlas_ID_mapping.csv](./Data/Abdo
 
 This file ensures traceability and reproducibility when working with external data references and annotations.
 
-<div align="center">
-    
-## 🔍 Installation
-</div>
+You may also email zzhou82@jh.edu for mapped full data and opportunities to collaborate in our future publications!
 
-You can load **DeepTumorVQA 1.0** directly using the 🤗 `datasets` library:
-
-```bash
-pip install datasets
-```
-```bash
-from datasets import load_dataset
-
-deep_tumor_vqa = load_dataset("tumor-vqa/DeepTumorVQA_1.0")
-print(deep_tumor_vqa)
-
-```
 
 <div align="center">
     
