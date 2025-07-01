@@ -19,7 +19,8 @@
 <a href="#" target="_blank">Yixiong Chen</a><sup>1</sup> •
 <a href="#" target="_blank">Wenjie Xiao</a><sup>1</sup> •
 <a href="#" target="_blank">Pedro R. A. S. Bassi</a><sup>1,2</sup> •
-<a href="#" target="_blank">Xinze Zhou</a><sup>1</sup> •
+<a href="#" target="_blank">Xinze Zhou</a><sup>1</sup>
+
 <a href="#" target="_blank">Sezgin Er</a><sup>3</sup> •
 <a href="#" target="_blank">Ibrahim Ethem Hamamci</a><sup>3</sup> •
 <a href="#" target="_blank">Zongwei Zhou</a><sup>1</sup> •
