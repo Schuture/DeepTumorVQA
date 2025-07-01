@@ -9,6 +9,9 @@
 <a href="https://huggingface.co/datasets/tumor-vqa/DeepTumorVQA_1.0" target="_blank">
     <img alt="HF Dataset" src="https://img.shields.io/badge/Dataset-HuggingFace-yellow?logo=huggingface" height="20" />
 </a>
+<a href="https://arxiv.org/pdf/2505.18915" target="_blank">
+    <img alt="arXiv Paper" src="https://img.shields.io/badge/Paper-arXiv-b31b1b?logo=arxiv" height="20" />
+</a>
 </p>
 
 <div style="font-size: 0.9em; text-align: center;">
