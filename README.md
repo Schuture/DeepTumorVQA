@@ -6,7 +6,7 @@
 
 
 <p>
-    <img alt="Visitors" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FSchuture%2FDeepTumorVQA" height="20"/>
+    <img alt="Visitors" src="https://visitor-badge.laobi.icu/badge?page_id=Schuture.DeepTumorVQA&left_color=%2363C7E6&right_color=%23CEE75F" height="20"/>
     <a href="https://huggingface.co/datasets/tumor-vqa/DeepTumorVQA_1.0" target="_blank">
         <img alt="HF Dataset" src="https://img.shields.io/badge/Dataset-HuggingFace-yellow?logo=huggingface" height="20" />
     </a>
