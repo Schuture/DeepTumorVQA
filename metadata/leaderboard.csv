@@ -1,0 +1,39 @@
+model,params,input,mode,overall,recog,meas,visr,medr,source
+Senior radiologist,-,3D vol,direct,54.5,70.0,40.0,64.0,44.0,paper Table 1 (free-form 200-sample subset)
+Junior radiologist,-,3D vol,direct,45.0,46.7,37.8,49.3,44.0,paper Table 1 (MC 200-sample subset)
+Meissa-4B FT (organ),4B,2D,direct,66.3,70.3,66.7,65.2,64.0,paper Table 1
+Meissa-4B FT (WV infer),4B,2D,direct,66.3,68.8,67.6,65.3,64.3,paper Table 1
+Meissa-4B FT (WV train+infer),4B,2D,direct,66.1,71.0,67.7,64.3,63.0,paper Table 1
+Qwen3-VL-4B FT (organ),4B,2D,direct,64.6,69.1,64.2,64.3,61.1,paper Table 1
+Qwen3-VL-4B FT (WV infer),4B,2D,direct,64.6,69.7,64.8,63.6,61.4,paper Table 1
+M3D-Phi3 FT,4B,3D vol,direct,59.8,66.2,70.3,65.8,29.1,paper Table 1
+RadFM FT,14B,3D vol,direct,58.9,62.3,70.1,66.3,27.7,paper Table 1
+M3D-Llama2 FT,7B,3D vol,direct,54.0,48.4,70.1,57.1,36.5,paper Table 1
+Qwen3.5-35B-A3B,35B(3B MoE),2D,direct,39.9,53.0,31.4,38.2,38.7,paper Table 1
+Qwen3-VL-4B (video),4B,Video,direct,38.9,58.3,31.1,39.2,25.7,paper Table 1
+LLaVA-OneVision 7B,7B,2D,direct,38.9,51.3,30.4,36.6,39.4,paper Table 1
+Gemini-3-Flash,API,2D,direct,38.8,42.6,35.7,40.7,33.9,paper Table 1
+Qwen3.5-9B,9B,2D,direct,38.5,58.4,29.3,38.4,27.4,paper Table 1
+Meissa-4B,4B,2D,direct,38.2,51.5,30.8,39.8,28.5,paper Table 1
+Meissa-4B (video),4B,Video,direct,37.9,45.9,30.3,41.3,30.0,paper Table 1
+Qwen3-VL-4B,4B,2D,direct,37.8,56.6,29.1,38.8,25.0,paper Table 1
+Qwen3-VL-8B (video),8B,Video,direct,36.2,55.1,28.5,36.6,23.4,paper Table 1
+HuatuoGPT-Qwen2.5VL,7B,2D,direct,36.0,50.1,28.2,36.8,27.7,paper Table 1
+InternVL3-8B,8B,2D,direct,34.4,52.5,32.0,31.8,23.1,paper Table 1
+Qwen3-VL-8B,8B,2D,direct,34.4,50.7,27.7,35.6,21.8,paper Table 1
+Merlin FT,7B,3D vol,direct,34.0,46.3,24.6,33.3,32.3,paper Table 1
+LLaVA-Med 7B,7B,2D,direct,32.3,50.0,23.4,28.7,30.3,paper Table 1
+MedGemma 4B (2D),4B,2D,direct,30.8,48.3,24.6,26.1,29.0,paper Table 1
+MedGemma 4B (3D),4B,2D 85-slice,direct,29.5,38.3,23.7,28.3,29.1,paper Table 1
+RadFM pretrained,14B,3D vol,direct,27.6,39.1,21.7,25.4,26.3,paper Table 1
+M3D-Llama2 pretrained,7B,3D vol,direct,19.0,10.3,23.3,23.7,13.6,paper Table 1
+M3D-Phi3 pretrained,4B,3D vol,direct,18.9,4.6,25.0,25.2,14.2,paper Table 1
+Meissa SFT (oracle),4B,2D+tools,oracle,63.8,68.2,78.3,55.6,61.5,paper Table 2 (trained on 20K tool traces)
+Gemini-3-Flash (oracle),API,2D+tools,oracle,61.9,66.4,60.0,58.0,67.8,paper Table 2
+Meissa SFT (predicted),4B,2D+tools,predicted,60.9,69.9,60.8,55.5,63.2,paper Table 2
+Qwen3.5-9B (oracle),9B,2D+tools,oracle,48.5,50.1,64.8,38.0,52.3,paper Table 2
+Meissa-4B (oracle),4B,2D+tools,oracle,46.0,44.9,64.4,35.2,50.7,paper Table 2
+Qwen3.5-9B (predicted),9B,2D+tools,predicted,43.9,48.9,46.9,31.6,61.3,paper Table 2
+Qwen3.5-9B (vision),9B,2D+tools,vision,40.3,59.7,29.5,38.6,35.0,paper Table 2
+Gemini-3-Flash (vision),API,2D+tools,vision,35.3,49.6,26.5,33.3,33.7,paper Table 2
+Meissa-4B (vision),4B,2D+tools,vision,31.5,41.1,26.2,32.6,24.5,paper Table 2

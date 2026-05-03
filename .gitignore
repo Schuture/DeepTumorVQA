@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# Editor
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Build artifacts
+build/
+dist/
+*.whl
+
+# Logs and run outputs
+logs/
+results/
+*.log
+out/
+output/
+
+# Local data
+data/
+cache/
+.cache/
+__data__/

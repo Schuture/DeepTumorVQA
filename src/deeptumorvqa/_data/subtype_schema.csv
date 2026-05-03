@@ -1,0 +1,43 @@
+subtype_name,task_group,gt_trace_steps,required_primitives,requires_measurement,requires_knowledge,requires_multi_organ,requires_spatial_localization,requires_counting,requires_threshold_mapping,requires_ratio_computation,n_benchmark,n_full_dataset
+PDAC existence,Recognition,1,segment,False,False,False,False,False,False,False,194,1068
+PNET existence,Recognition,1,segment,False,False,False,False,False,False,False,195,1072
+colon lesion existence,Recognition,1,segment,False,False,False,False,False,False,False,198,1108
+kidney cyst existence,Recognition,1,segment,False,False,False,False,False,False,False,202,1144
+kidney lesion existence,Recognition,1,segment,False,False,False,False,False,False,False,296,2098
+kidney tumor existence,Recognition,1,segment,False,False,False,False,False,False,False,238,1504
+liver lesion existence,Recognition,1,segment,False,False,False,False,False,False,False,284,1972
+pancreatic lesion existence,Recognition,1,segment,False,False,False,False,False,False,False,212,1243
+splenomegaly detection,Recognition,3,segment→measure→knowledge,True,True,False,False,False,True,False,204,1172
+lesion volume measurement,Measurement,2,segment→measure,True,False,False,False,False,False,False,210,689
+organ HU measurement,Measurement,2,segment→measure,True,False,False,False,False,False,False,746,3533
+organ HU ratio,Measurement,4,segment→measure→segment→measure,True,False,True,False,False,False,True,89,89
+organ volume measurement,Measurement,2,segment→measure,True,False,False,False,False,False,False,852,4097
+tumor burden percentage,Measurement,4,segment→measure→segment→measure,True,False,False,False,False,False,True,126,243
+adjacent organ,Visual Reasoning,1,segment,False,False,False,True,False,False,False,109,184
+bilateral kidney asymmetry,Visual Reasoning,5,segment→measure→segment→measure→segment,True,False,False,False,False,False,False,109,186
+inter-segment comparison,Visual Reasoning,2,segment→measure,True,False,False,False,True,False,False,358,2417
+kidney volume comparison,Visual Reasoning,4,segment→measure→segment→measure,True,False,False,False,False,False,False,181,831
+largest lesion attenuation,Visual Reasoning,4,segment→measure→segment→measure,True,False,False,False,False,False,False,183,841
+largest lesion diameter,Visual Reasoning,2,segment→measure,True,False,False,False,False,False,False,146,516
+largest lesion location,Visual Reasoning,1,segment,False,False,False,True,False,False,False,125,388
+largest lesion slice,Visual Reasoning,1,segment,False,False,False,True,False,False,False,136,430
+lesion count by location,Visual Reasoning,2,segment→measure,True,False,False,True,True,False,False,232,1281
+lesion counting,Visual Reasoning,2,segment→measure,True,False,False,False,True,False,False,523,3898
+lesion outlier,Visual Reasoning,2,segment→measure,True,False,False,False,False,False,False,101,113
+liver lesion clustering,Visual Reasoning,2,segment→measure,True,False,False,True,True,False,False,113,218
+multi-organ lesion burden comparison,Visual Reasoning,4,segment→measure→segment→measure,True,False,False,False,False,False,True,146,517
+organ aggregation,Visual Reasoning,4,segment→measure→segment→measure,True,False,False,False,False,False,False,977,7982
+organ enlargement,Visual Reasoning,2,segment→measure,True,False,False,False,False,True,False,459,3329
+tumor organ HU difference,Visual Reasoning,4,segment→measure→segment→measure,True,False,False,False,False,False,False,151,565
+PDAC vs PNET classification,Medical Reasoning,3,knowledge→segment→measure,True,True,False,False,False,True,False,311,311
+fatty liver,Medical Reasoning,5,knowledge→segment→measure→segment→measure,True,True,True,False,False,True,True,99,99
+hepatic steatosis grading,Medical Reasoning,5,knowledge→segment→measure→segment→measure,True,True,True,False,False,True,True,53,53
+lesion type classification,Medical Reasoning,4,knowledge→segment→measure,True,True,False,False,False,True,False,42,42
+pancreatic cyst resectability,Medical Reasoning,3,knowledge→segment→measure,True,True,False,False,False,True,False,144,144
+pancreatic lesion resectability,Medical Reasoning,3,knowledge→segment→measure,True,True,False,False,False,True,False,98,98
+pancreatic steatosis,Medical Reasoning,5,knowledge→segment→measure→segment→measure,True,True,True,False,False,True,True,45,45
+pancreatic tumor staging,Medical Reasoning,3,knowledge→segment→measure,True,True,False,False,False,True,False,201,1501
+portal hypertension assessment,Medical Reasoning,5,knowledge→segment→measure→segment→measure,True,True,True,False,False,True,False,44,44
+pseudocyst determination,Medical Reasoning,3,knowledge→segment→measure,True,True,False,False,False,True,False,3,3
+renal mass characterization,Medical Reasoning,3,knowledge→segment→measure,True,True,False,False,False,True,False,23,23
+splenomegaly grading,Medical Reasoning,3,knowledge→segment→measure,True,True,False,False,False,True,False,842,842

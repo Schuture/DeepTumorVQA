@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "deeptumorvqa"
+version = "2.0.0"
+description = "DeepTumorVQA — 3D CT diagnostic VQA benchmark + agent evaluation framework (NeurIPS 2026)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+authors = [
+    {name = "DeepTumorVQA Team"},
+]
+keywords = ["medical-imaging", "vlm", "vqa", "agent", "ct-scan", "benchmark"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Medical Science Apps.",
+]
+dependencies = [
+    "huggingface_hub>=0.20.0",
+    "Pillow>=10.0",
+    "numpy>=1.24",
+]
+
+[project.optional-dependencies]
+# Backend for direct VQA via vLLM (recommended)
+vllm = ["vllm>=0.6.0"]
+# Backend for direct VQA via HuggingFace transformers
+hf   = ["torch>=2.1", "transformers>=4.45"]
+# Backend for agent mode (talks to a vLLM OpenAI-compatible server)
+openai = ["openai>=1.0"]
+# All optional dependencies
+all = ["vllm>=0.6.0", "torch>=2.1", "transformers>=4.45", "openai>=1.0"]
+
+[project.urls]
+Homepage = "https://github.com/Schuture/DeepTumorVQA"
+Dataset  = "https://huggingface.co/datasets/tumor-vqa/DeepTumorVQA_2.0"
+Paper    = "https://arxiv.org/abs/2505.18915"
+Issues   = "https://github.com/Schuture/DeepTumorVQA/issues"
+
+[project.scripts]
+deeptumorvqa-eval = "deeptumorvqa.evaluate:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+deeptumorvqa = ["_data/*.csv"]
