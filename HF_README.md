@@ -16,10 +16,16 @@ size_categories:
 - 100K<n<1M
 configs:
 - config_name: benchmark
-  data_files: benchmark/test_qa.json
+  data_files:
+  - split: test
+    path: benchmark/test_qa.jsonl
   default: true
 - config_name: train
-  data_files: train/train_qa.csv
+  data_files:
+  - split: train
+    path: train/train_qa.csv
+  - split: val_pool
+    path: train/val_qa_pool.csv
 - config_name: agent_sft
   data_files:
   - split: train
@@ -30,10 +36,25 @@ configs:
 
 # DeepTumorVQA v2
 
+<p align="center">
+    <img src="https://raw.githubusercontent.com/Schuture/DeepTumorVQA/v2/images/covervqa.png" width="100%" alt="DeepTumorVQA banner"/>
+</p>
+
 3D abdominal-CT diagnostic Visual Question Answering benchmark with **42
 clinical subtypes** and **438K total QA pairs (10K curated benchmark + 428K
 training pool)**. Includes pre-extracted 2D and video modalities, 20K agent
 training trajectories with tool-use traces, and a paper-locked leaderboard.
+
+**Resources**
+
+| | |
+|---|---|
+| 📄 Paper (arXiv) | https://arxiv.org/abs/2505.18915 |
+| 💻 Code (GitHub) | https://github.com/Schuture/DeepTumorVQA |
+| 🤗 Dataset (this page) | https://huggingface.co/datasets/tumor-vqa/DeepTumorVQA_2.0 |
+| 🏆 Leaderboard | [`metadata/leaderboard.csv`](metadata/leaderboard.csv) (30 paper-evaluated models) |
+| 📐 Subtype schema | [`metadata/subtype_schema.csv`](metadata/subtype_schema.csv) (42 subtypes × 13 attribute cols) |
+| 🥐 Croissant | https://huggingface.co/api/datasets/tumor-vqa/DeepTumorVQA_2.0/croissant |
 
 ## Quick start
 
@@ -78,8 +99,9 @@ Plus loose folders:
 ```
 DeepTumorVQA_2.0/
 ├── benchmark/                                # 10K test QA + all modalities
-│   ├── test_qa.json
-│   ├── ct/BDMAP_*/ct.nii.gz                  # 991 NIfTI volumes (~30 GB)
+│   ├── test_qa.json                          # nested form (has version/num_questions metadata) — used by `deeptumorvqa` Python loader
+│   ├── test_qa.jsonl                         # flat form, one question per line — what the HF dataset viewer loads
+│   ├── ct/BDMAP_*/ct.nii.gz                  # 991 NIfTI volumes (~70 GB)
 │   ├── images_2d/
 │   │   ├── whole/*.png                       # 991 whole-volume slices (~672 MB)
 │   │   └── organ/*.png                       # 7,160 organ-focused crops (~2.9 GB) for vision agent
@@ -177,18 +199,28 @@ demonstrating non-trivial difficulty.
 
 ## License
 
-- Derived QA, agent SFT trajectories, tool caches, 2D PNG/MP4: **CC-BY-4.0**
-- Upstream CT NIfTI: see
+- **DeepTumorVQA annotations, structured metadata, and benchmark questions**
+  (`benchmark/test_qa.json` / `.jsonl`, `train/train_qa.csv`,
+  `agent_sft/*.jsonl`, `tool_cache/*.json`, `metadata/*.csv`):
+  **CC-BY-4.0** — attribution required, unrestricted research use.
+- **Pre-computed 2D slices, videos, and 3D arrays derived from source CT
+  volumes** (`benchmark/images_2d/`, `benchmark/videos/`, `benchmark/ct/`,
+  `train/images_2d/`, `train/videos/`): governed by the **respective source
+  CT licenses** — see
   [AbdomenAtlas3.0Mini](https://huggingface.co/datasets/AbdomenAtlas/AbdomenAtlas3.0Mini)
+  for upstream terms. Processing scripts in the
+  [GitHub repo](https://github.com/Schuture/DeepTumorVQA) let you regenerate
+  these locally if needed.
+- **Underlying CT NIfTI volumes**: governed by their respective source-dataset
+  licenses; users must comply with each source's terms of use.
 
 ## Citation
 
 ```bibtex
-@article{deeptumorvqa2026,
-    title   = {{DeepTumorVQA}: A 3D CT Diagnostic VQA Benchmark Across 42
-               Clinical Subtypes},
-    author  = {…},
-    journal = {NeurIPS Datasets and Benchmarks},
-    year    = {2026},
+@article{chen2025vision,
+  title={Are vision language models ready for clinical diagnosis? a 3d medical benchmark for tumor-centric visual question answering},
+  author={Chen, Yixiong and Xiao, Wenjie and Bassi, Pedro RAS and Zhou, Xinze and Er, Sezgin and Hamamci, Ibrahim Ethem and Zhou, Zongwei and Yuille, Alan},
+  journal={arXiv preprint arXiv:2505.18915},
+  year={2025}
 }
 ```
