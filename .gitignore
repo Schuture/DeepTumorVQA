@@ -30,8 +30,9 @@ results/
 out/
 output/
 
-# Local data
-data/
-cache/
+# Local data caches (only at repo root — `src/deeptumorvqa/data/` is a real
+# subpackage and must be tracked)
+/data/
+/cache/
 .cache/
 __data__/
