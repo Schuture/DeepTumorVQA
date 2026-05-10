@@ -4,7 +4,7 @@
 
 # DeepTumorVQA v2
 
-### *3D Medical Visual Question Answering — 42 clinical subtypes, 438K QA pairs, agent + VLM evaluation*
+### *3D Medical Visual Question Answering — 42 clinical subtypes, 438K training + 10k testing QA pairs, agent + VLM evaluation*
 
 <p>
     <a href="https://arxiv.org/abs/2505.18915" target="_blank">
