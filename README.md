@@ -211,11 +211,11 @@ result file attached.
 ## Citation
 
 ```bibtex
-@article{chen2025vision,
-  title={Are vision language models ready for clinical diagnosis? a 3d medical benchmark for tumor-centric visual question answering},
-  author={Chen, Yixiong and Xiao, Wenjie and Bassi, Pedro RAS and Zhou, Xinze and Er, Sezgin and Hamamci, Ibrahim Ethem and Zhou, Zongwei and Yuille, Alan},
-  journal={arXiv preprint arXiv:2505.18915},
-  year={2025}
+@article{chen2026deeptumorvqa,
+  title={DeepTumorVQA: A Hierarchical 3D CT Benchmark for Stage-Wise Evaluation of Medical VLMs and Tool-Augmented Agents},
+  author={Chen, Yixiong and Xiao, Wenjie and Bassi, Pedro RAS and Wang, Boyan and He, Liang and Zhou, Xinze and Er, Sezgin and Hamamci, Ibrahim Ethem and Zhou, Zongwei and Yuille, Alan},
+  journal={arXiv preprint arXiv:2605.09679,
+  year={2026}
 }
 ```
 
