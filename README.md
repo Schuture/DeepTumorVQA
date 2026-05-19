@@ -8,7 +8,7 @@
 
 <p>
     <a href="https://arxiv.org/abs/2605.09679" target="_blank">
-        <img alt="arXiv" src="https://img.shields.io/badge/Paper-arXiv:2505.18915-b31b1b?logo=arxiv" />
+        <img alt="arXiv" src="https://img.shields.io/badge/Paper-arXiv:2605.09679-b31b1b?logo=arxiv" />
     </a>
     <a href="https://huggingface.co/datasets/tumor-vqa/DeepTumorVQA_2.0" target="_blank">
         <img alt="HF Dataset" src="https://img.shields.io/badge/🤗_Dataset-tumor--vqa%2FDeepTumorVQA__2.0-yellow" />
