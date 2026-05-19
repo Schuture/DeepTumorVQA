@@ -7,7 +7,7 @@
 ### *3D Medical Visual Question Answering — 42 clinical subtypes, 438K training + 10k testing QA pairs, agent + VLM evaluation*
 
 <p>
-    <a href="https://arxiv.org/abs/2505.18915" target="_blank">
+    <a href="https://arxiv.org/abs/2605.09679" target="_blank">
         <img alt="arXiv" src="https://img.shields.io/badge/Paper-arXiv:2505.18915-b31b1b?logo=arxiv" />
     </a>
     <a href="https://huggingface.co/datasets/tumor-vqa/DeepTumorVQA_2.0" target="_blank">
